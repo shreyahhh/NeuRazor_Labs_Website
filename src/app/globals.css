@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Match admin login page (admin/src/pages/auth/Login.jsx) */
+:root {
+  --color-bg-base: #050712;
+  --color-surface: #070a18;
+  --color-surface-alt: #0b1024;
+  --color-text-primary: #ededed;
+  --color-text-secondary: #a1a1a1;
+  --color-accent: #6366f1; /* indigo-500, primary CTA gradient start */
+  --color-accent-end: #a855f7; /* purple-500, primary CTA gradient end */
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar – match admin */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
